@@ -2,6 +2,7 @@ package com.mycompany.myapp;
 
 import android.app.*;
 import android.os.*;
+import android.widget.*;
 
 public class MainActivity extends ListActivity 
 {
@@ -13,6 +14,6 @@ public class MainActivity extends ListActivity
         String[] lt = {
         "4455",
         };
-        setListAdapter(new ArrauAdapter<String>(this, android.R.layout.simple_list_item_1));
+        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lt));
     }
 }
